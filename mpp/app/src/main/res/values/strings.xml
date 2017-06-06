@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Madan Pur </string>
+    <string name="title"> Madan Puraskar Pustakalaya </string>
+    <string name="footer"> Copyright @ mpp.org.np </string>
+    <string name="title_activity_new1">New1</string>
+    <string name="title_activity_periodicals">Periodicals</string>
+    <string name="title_activity_aboutus">Aboutus</string>
+    <string name="title_activity_plan_visit">PlanVisit</string>
+</resources>
