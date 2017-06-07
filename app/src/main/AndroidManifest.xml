@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pc.dashboard">
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -8,6 +9,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Dashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +32,13 @@
         </activity>
         <activity
             android:name=".Periodicals"
-            android:label="@string/title_activity_periodicals" />
+            android:label="@string/title_activity_periodicals">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".Aboutus"
             android:label="@string/title_activity_aboutus" />
@@ -32,7 +46,21 @@
             android:name=".PlanVisit"
             android:label="@string/title_activity_plan_visit"></activity>
         <activity android:name=".SingleView"
-            android:label="SingleBook">
+            android:label="SingleView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SingleViewPeriodical"
+            android:label="SingleViewPeriodical">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
     </application>
 

@@ -13,10 +13,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:numColumns="3" >
+        android:gravity="center_horizontal"
+        android:numColumns="3"
+        android:verticalSpacing="30dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
 
     </GridView>
 
+
+    <RelativeLayout
+        android:id="@+id/footer1"
+        android:layout_width="match_parent"
+
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/footer"
+            android:textSize="20sp"
+            android:id="@+id/textView"
+            android:textColor="#ffff"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

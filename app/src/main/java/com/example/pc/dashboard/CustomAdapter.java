@@ -1,6 +1,7 @@
 package com.example.pc.dashboard;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,10 +49,12 @@ public class CustomAdapter extends BaseAdapter{
         if (convertView == null) {
 
             grid = inflater.inflate(R.layout.dashboard_layout, null);
+
             TextView textView = (TextView) grid.findViewById(R.id.textView1);
             ImageView imageView = (ImageView)grid.findViewById(R.id.imageView1);
             textView.setText(web[position]);
             imageView.setImageResource(Imageid[position]);
+            grid.setBackgroundResource(R.drawable.dashboard_color);
         } else {
             grid = convertView;
         }

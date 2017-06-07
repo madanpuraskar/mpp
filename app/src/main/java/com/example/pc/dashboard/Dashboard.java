@@ -4,6 +4,7 @@ package com.example.pc.dashboard;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -17,7 +18,7 @@ public class Dashboard extends AppCompatActivity {
     Context context;
     ArrayList prgmName;
     public static String [] prgmNameList={"Books","Periodicals","About us","PlanVisit"};
-    public static int [] prgmImages={R.drawable.images,R.drawable.periodical,R.drawable.mpp,R.drawable.periodicals};
+    public static int [] prgmImages={R.drawable.book,R.drawable.periodical,R.drawable.aboutus,R.drawable.planvisit};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +34,6 @@ public class Dashboard extends AppCompatActivity {
                  //do whatever you want
                 {
 
-                    view.setBackgroundColor(0x00FFFFFF75);
                     Intent intent = new Intent(Dashboard.this, Book.class);
 
                     startActivity(intent);
