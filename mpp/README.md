@@ -1,2 +1,0 @@
-# mpp
-MPP Android APP
